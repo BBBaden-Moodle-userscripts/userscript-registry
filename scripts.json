@@ -4,49 +4,11 @@
   "scripts": [
     {
       "id": "example-script",
-      "name": "Example Script",
-      "version": "1.0.0",
-      "description": "This is an example script that does something useful",
-      "author": "YourName",
-      "match": [
-        "https://moodle.bbbaden.ch/course/*", 
-        "https://moodle.bbbaden.ch/mod/*"
-      ],
-      "exclude": [
-        "https://moodle.bbbaden.ch/course/view.php?id=1234"
-      ],
-      "requireRemote": [
-        "https://cdn.jsdelivr.net/npm/some-library@1.0.0/dist/library.min.js"
-      ],
-      "enabled": true,
-      "runAt": "document_end",
-      "updateUrl": "https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/example-script/main/dist/example-script.js",
-      "downloadUrl": "https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/example-script/main/dist/example-script.js",
-      "homepage": "https://github.com/BBBaden-Moodle-userscripts/example-script",
-      "icon": "https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/example-script/main/icon.png",
-      "settings": {
-        "enableFeatureX": {
-          "type": "boolean",
-          "label": "Enable Feature X",
-          "default": true
-        },
-        "colorTheme": {
-          "type": "select",
-          "label": "Color Theme",
-          "default": "blue",
-          "options": [
-            {"label": "Blue", "value": "blue"},
-            {"label": "Red", "value": "red"},
-            {"label": "Green", "value": "green"}
-          ]
-        },
-        "refreshInterval": {
-          "type": "number",
-          "label": "Refresh Interval (seconds)",
-          "default": 30
-        }
-      },
-      "tags": ["utility", "interface"]
+      "repo": "BBBaden-Moodle-userscripts/example-script"
+    },
+    {
+      "id": "another-script",
+      "repo": "BBBaden-Moodle-userscripts/another-script"
     }
   ]
 }
