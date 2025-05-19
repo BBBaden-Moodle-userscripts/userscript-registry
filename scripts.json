@@ -1,1 +1,65 @@
-scripts.json
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-05-19T12:00:00Z",
+  "scripts": [
+    {
+      "id": "example-script",
+      "name": "Example Script",
+      "version": "1.0.0",
+      "description": "This is an example script that does something useful",
+      "author": "YourName",
+      "match": [
+        "https://moodle.bbbaden.ch/course/*", 
+        "https://moodle.bbbaden.ch/mod/*"
+      ],
+      "exclude": [
+        "https://moodle.bbbaden.ch/course/view.php?id=1234"
+      ],
+      "requireRemote": [
+        "https://cdn.jsdelivr.net/npm/some-library@1.0.0/dist/library.min.js"
+      ],
+      "enabled": true,
+      "runAt": "document_end",
+      "updateUrl": "https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/example-script/main/dist/example-script.js",
+      "downloadUrl": "https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/example-script/main/dist/example-script.js",
+      "homepage": "https://github.com/BBBaden-Moodle-userscripts/example-script",
+      "icon": "https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/example-script/main/icon.png",
+      "settings": {
+        "enableFeatureX": {
+          "type": "boolean",
+          "label": "Enable Feature X",
+          "default": true
+        },
+        "colorTheme": {
+          "type": "select",
+          "label": "Color Theme",
+          "default": "blue",
+          "options": [
+            {"label": "Blue", "value": "blue"},
+            {"label": "Red", "value": "red"},
+            {"label": "Green", "value": "green"}
+          ]
+        },
+        "refreshInterval": {
+          "type": "number",
+          "label": "Refresh Interval (seconds)",
+          "default": 30
+        }
+      },
+      "tags": ["utility", "interface"]
+    },
+    {
+      "id": "another-script",
+      "name": "Another Useful Script",
+      "version": "2.1.0",
+      "description": "This script adds more functionality",
+      "author": "AnotherAuthor",
+      "match": ["https://moodle.bbbaden.ch/*"],
+      "enabled": true,
+      "runAt": "document_start",
+      "downloadUrl": "https://raw.githubusercontent.com/BBBaden-Moodle-userscripts/another-script/main/dist/another-script.js",
+      "homepage": "https://github.com/BBBaden-Moodle-userscripts/another-script",
+      "tags": ["essential", "performance"]
+    }
+  ]
+}
