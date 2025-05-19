@@ -3,12 +3,16 @@
   "lastUpdated": "2025-05-19T12:00:00Z",
   "scripts": [
     {
-      "id": "example-script",
-      "repo": "BBBaden-Moodle-userscripts/example-script"
+      "id": "moodle-auto-login",
+      "repo": "BBBaden-Moodle-userscripts/moodle-auto-login"
     },
     {
-      "id": "another-script",
-      "repo": "BBBaden-Moodle-userscripts/another-script"
+      "id": "course-quick-access",
+      "repo": "BBBaden-Moodle-userscripts/course-quick-access"
+    },
+    {
+      "id": "grade-calculator",
+      "repo": "BBBaden-Moodle-userscripts/grade-calculator"
     }
   ]
 }
